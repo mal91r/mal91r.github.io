@@ -32,7 +32,7 @@ function createDialog(meta) {
 
 
         // Отправка HTTP POST-запроса
-        fetch('http://localhost:5000/Feedback/PostFeedback', {
+        fetch('http://4810897-ta77728.twc1.net:8080/Feedback/PostFeedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
