@@ -8,7 +8,6 @@ function createDialog(meta) {
         <br>
         <button id="closeDialog">Закрыть</button>
         <button id="apply">Отправить</button>
-        <pre>${meta}</pre>
     `;
     
 
@@ -39,7 +38,7 @@ function createDialog(meta) {
             },
             body: JSON.stringify({
                 'message': reviewText,
-                'chatId': userId
+                'clientId': userId
             }),
         })
             .then(response => {
